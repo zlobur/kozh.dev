@@ -4,7 +4,7 @@ description = "Personal site of Pavel Kozhevnikov — writing, projects and note
 pageTitle = "Pavel Kozhevnikov — kozh.dev"
 pageDescription = "Personal site of Pavel Kozhevnikov — writing, projects and notes."
 url = "https://kozh.dev"
-repository = "https://github.com/zlobur/kozh.dev"
+repository = "https://github.com/zlobur"
 footerNote = ""
 
 [config.theme]
