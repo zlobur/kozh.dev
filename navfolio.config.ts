@@ -1,10 +1,10 @@
-import { mediaModule, pages, projectsModule, vibeModule } from '@navfolio/pages';
+import { pages, projectsModule, vibeModule } from '@navfolio/pages';
 import { markdownPlugin } from '@navfolio/plugin-markdown';
 
 import { defineNavfolioConfig } from './src/plugins/config';
 
 export default defineNavfolioConfig({
-  modules: [projectsModule(), vibeModule(), mediaModule()],
+  modules: [projectsModule(), vibeModule()],
   plugins: [
     markdownPlugin({
       expressiveCode: true,
