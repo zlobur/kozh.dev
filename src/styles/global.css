@@ -1,0 +1,8 @@
+@import './fonts.css';
+@import 'katex/dist/katex.min.css';
+
+html:root:root {
+  --font-config-zh: var(--font-config-en);
+  --font-config-zh-subset: var(--font-config-en);
+  --font-cjk-system: var(--font-config-en), system-ui, sans-serif;
+}

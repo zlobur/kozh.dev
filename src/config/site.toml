@@ -1,0 +1,185 @@
+[config.site]
+title = "kozh.dev"
+description = "Personal site of Pavel Kozhevnikov — writing, projects and notes."
+pageTitle = "Pavel Kozhevnikov — kozh.dev"
+pageDescription = "Personal site of Pavel Kozhevnikov — writing, projects and notes."
+url = "https://kozh.dev"
+repository = "https://github.com/zlobur/kozh.dev"
+footerNote = ""
+
+[config.theme]
+# green-soft, green-vivid, rose-soft, pink-soft, purple-soft, blue-soft, orange-soft, brown-soft
+palette = "green-soft"
+# UI language: en, zh-CN, zh-TW
+lang = "en"
+
+[config.fonts]
+en = "Maple Mono"
+code = "Monaco"
+zh = "Unused"
+file = "/fonts/Monaco.ttf"
+
+[config.code]
+lightTheme = "catppuccin-latte"
+darkTheme = "catppuccin-macchiato"
+lineNumbers = true
+wrap = true
+preserveIndent = true
+collapseStyle = "collapsible-auto"
+
+[config.math]
+render = "katex" # "katex" | "mathjax"
+
+[config.comments]
+enabled = false
+provider = "none"
+show_on_posts = true
+
+[config.search]
+enabled = true
+shortcut = "mod+k"
+placeholder = "Search..."
+maxResults = 6
+
+[config.pages.blog]
+title = "Blog"
+kicker = "Writing"
+subtitle = "Posts and technical notes."
+note = "Longer pieces — what I ran into, what I built, and what turned out to be wrong."
+postsPerPage = 6
+# date-fns format template
+dateFormat = "yyyy-MM-dd"
+# Metadata separator: any symbol such as "|" or "/", or the special value "icon".
+metadataSeparator = "icon"
+# Post list cover style: "card" keeps a bordered thumbnail, "mask" blends the image into the right edge.
+coverImageStyle = "mask"
+
+[config.pages.blog.categories]
+title = "Categories"
+kicker = "Browse posts"
+subtitle = ""
+note = "Recurring topics, gathered from post frontmatter."
+
+[config.pages.blog.series]
+title = "Series"
+kicker = "Reading paths"
+subtitle = ""
+note = "Connected posts that can be read in the order they were written."
+
+[config.pages.projects]
+title = "Projects"
+kicker = "Project shelf"
+subtitle = "Things I have built."
+note = "Side projects and tools, with a note on why each one exists."
+
+[config.pages.vibe]
+title = "Notes"
+kicker = ""
+subtitle = "Short fragments."
+note = "Too short for a post, but worth keeping."
+showTrail = true
+
+[config.profile]
+name = "Pavel Kozhevnikov"
+handle = "@zlobur"
+role = ""
+email = "kozhdev@gmail.com"
+website = "https://kozh.dev"
+github = "https://github.com/zlobur"
+avatar = "/images/avatar.png"
+
+[[config.topNav.links]]
+label = "Home"
+href = "/"
+
+[[config.topNav.links]]
+label = "Blog"
+href = "/blog"
+
+[[config.topNav.links]]
+label = "Projects"
+module = "projects"
+
+[[config.topNav.links]]
+label = "Notes"
+module = "vibe"
+
+[[config.topNav.links]]
+label = "About"
+href = "/about"
+
+[config.home]
+
+[config.home.quote]
+text = [
+  "Write it down once,",
+  "so it does not have to be",
+  "figured out twice.",
+]
+
+[config.home.intro]
+title = "Pavel Kozhevnikov"
+name = "Pavel Kozhevnikov"
+body = [
+  "This is my personal site.",
+  "It collects what I write, what I build, and shorter notes that are not finished enough to be posts.",
+  "A longer introduction lives on the About page.",
+]
+
+[config.home.latest]
+count = 1
+heatmapWeeks = 24
+showHeatmapLatest = true
+excludeDraft = true
+startDate = ""
+dateArchiveBaseHref = ""
+
+[[config.home.navigation]]
+icon = "pen"
+title = "Blog"
+subtitle = "Posts and technical notes"
+href = "/blog"
+
+[[config.home.navigation]]
+icon = "briefcase"
+title = "Projects"
+subtitle = "Things I have built"
+href = "/projects"
+
+[[config.home.navigation]]
+icon = "compass"
+title = "Notes"
+subtitle = "Short fragments"
+href = "/vibe"
+
+[[config.home.navigation]]
+icon = "github"
+title = "GitHub"
+subtitle = "Code and experiments"
+href = "https://github.com/zlobur"
+
+[[config.home.links]]
+label = "GitHub"
+icon = "github"
+tooltip = "https://github.com/zlobur"
+copy = false
+
+[[config.home.links]]
+label = "Email"
+icon = "mail"
+tooltip = "kozhdev@gmail.com"
+copy = true
+
+[[config.home.links]]
+label = "RSS"
+icon = "rss"
+tooltip = "/rss.xml"
+copy = false
+
+[[config.home.doing]]
+text = "Setting up this site"
+mark = "01"
+
+[[config.home.doing]]
+text = "Writing the first posts"
+mark = "02"
