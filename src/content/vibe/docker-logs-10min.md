@@ -1,6 +1,6 @@
 ---
 title: 'Логи докер-контейнера за последние 10 минут'
-date: 2026-09-14
+date: 2026-09-16
 draft: false
 type: text
 tags: ['docker', 'cli']
