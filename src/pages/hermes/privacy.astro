@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const updated = '2026-09-20';
+const contact = 'privacy@kozh.dev';
+---
+
+<BaseLayout
+  title="Hermes — Privacy Policy"
+  description="Privacy policy of Hermes, a private personal assistant application."
+>
+  <meta slot="head" name="robots" content="noindex, nofollow" />
+  <div class="publication-bg" aria-hidden="true"></div>
+  <main class="policy-shell" aria-labelledby="policy-title">
+    <article class="policy">
+      <p class="policy-kicker">Hermes</p>
+      <h1 id="policy-title">Privacy Policy</h1>
+      <p class="policy-meta">Last updated: {updated}</p>
+
+      <h2>What Hermes is</h2>
+      <p>
+        Hermes is a private personal assistant operated by the owner of this site for himself and
+        his family. It is not a public service: it has no sign-up, it is not offered to third
+        parties, and only accounts explicitly approved by the owner can use it.
+      </p>
+
+      <h2>Google data the application accesses</h2>
+      <p>
+        With the account owner's consent, Hermes accesses the following data in that person's own
+        Google account:
+      </p>
+      <ul>
+        <li>Google Calendar — to read, create, update and delete events and reminders.</li>
+        <li>
+          Google Drive — to store and read files the owner asks it to keep, such as receipt photos.
+        </li>
+        <li>
+          Google Sheets and Google Docs — to read and write the owner's own spreadsheets and
+          documents, such as expense logs and task journals.
+        </li>
+        <li>Gmail — to read, send and organise mail when the owner asks it to.</li>
+        <li>Google Contacts — read-only, to resolve names to addresses.</li>
+      </ul>
+
+      <h2>How the data is used</h2>
+      <p>
+        Data is used only to carry out requests made by the account owner, for example adding a
+        calendar event or appending a row to a spreadsheet. It is not used for advertising,
+        profiling, analytics or any purpose unrelated to the request.
+      </p>
+
+      <h2>Where the data is processed and stored</h2>
+      <p>
+        Hermes runs on a server controlled by the owner. OAuth tokens are stored on that server with
+        access restricted to the application. To understand and answer a request, the text of the
+        request and the data needed to fulfil it may be sent to language model providers acting as
+        processors. No Google user data is sold, and none is shared with anyone else.
+      </p>
+
+      <h2>Limited Use</h2>
+      <p>
+        Hermes' use and transfer of information received from Google APIs adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy"
+          >Google API Services User Data Policy</a
+        >, including the Limited Use requirements.
+      </p>
+
+      <h2>Retention and deletion</h2>
+      <p>
+        Data stays in the owner's Google account; Hermes keeps working copies only as long as a
+        request requires, plus conversation history on the owner's server. Access can be revoked at
+        any time at
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+        which immediately invalidates the application's tokens. Stored data is deleted on request.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Questions and deletion requests: <a href={`mailto:${contact}`}>{contact}</a>.</p>
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .policy-shell {
+    display: grid;
+    justify-items: center;
+    padding-top: 116px;
+    padding-bottom: 72px;
+  }
+
+  .policy {
+    width: min(100%, 760px);
+    padding: clamp(22px, 5vw, 56px) clamp(6px, 3vw, 18px);
+    color: var(--paper-ink-soft);
+    font-size: 1.02rem;
+    line-height: 1.8;
+  }
+
+  .policy-kicker {
+    margin: 0 0 12px;
+    color: var(--paper-accent);
+    font-family: var(--font-ui-label);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+    color: var(--paper-ink);
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.1;
+  }
+
+  .policy-meta {
+    margin: 12px 0 0;
+    font-family: var(--font-ui-label);
+    font-size: 0.86rem;
+  }
+
+  h2 {
+    margin: 36px 0 8px;
+    color: var(--paper-ink);
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  p {
+    margin: 0 0 12px;
+  }
+
+  ul {
+    margin: 0 0 12px;
+    padding-left: 1.2em;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  a {
+    color: var(--paper-accent);
+  }
+
+  @media (max-width: 720px) {
+    .policy-shell {
+      padding-top: 92px;
+      padding-bottom: 42px;
+    }
+  }
+</style>

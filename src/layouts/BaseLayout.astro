@@ -20,6 +20,7 @@ const htmlLang = getHtmlLang(siteConfig);
 <ThemeBaseLayout htmlLang={htmlLang} palette={palette}>
   <Fragment slot="head">
     <BaseHead title={title} description={description} />
+    <slot name="head" />
   </Fragment>
   <Fragment slot="navigation">
     <BlogTopNav />
