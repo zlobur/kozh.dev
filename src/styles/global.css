@@ -5,4 +5,9 @@ html:root:root {
   --font-config-zh: var(--font-config-en);
   --font-config-zh-subset: var(--font-config-en);
   --font-cjk-system: var(--font-config-en), system-ui, sans-serif;
+  --font-article: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+html:root .blog-layout-centered .article-column {
+  max-width: 760px;
 }
