@@ -11,3 +11,13 @@ html:root:root {
 html:root .blog-layout-centered .article-column {
   max-width: 760px;
 }
+
+@media (max-width: 640px) {
+  html:root .tag-list .tag:not(:last-child) {
+    margin-right: 0.6em;
+  }
+
+  html:root .tag-list .tag {
+    white-space: nowrap;
+  }
+}
