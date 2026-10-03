@@ -413,9 +413,11 @@ const siteConfig = defineCollection({
       .optional()
       .default(defaultPagesConfig),
     home: z.object({
-      quote: z.object({
-        text: z.array(z.string()).min(1),
-      }),
+      quote: z
+        .object({
+          text: z.array(z.string()).min(1),
+        })
+        .optional(),
       intro: z.object({
         title: z.string(),
         name: z.string(),

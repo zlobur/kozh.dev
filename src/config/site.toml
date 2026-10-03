@@ -82,11 +82,11 @@ showTrail = true
 [config.profile]
 name = "Pavel Kozhevnikov"
 handle = "@zlobur"
-role = ""
+role = "Backend engineer · Barcelona"
 email = "kozhdev@gmail.com"
 website = "https://kozh.dev"
 github = "https://github.com/zlobur"
-avatar = "/images/avatar.png"
+avatar = "/images/avatar.svg"
 
 [[config.topNav.links]]
 label = "Home"
@@ -110,20 +110,12 @@ href = "/about"
 
 [config.home]
 
-[config.home.quote]
-text = [
-  "Write it down once,",
-  "so it does not have to be",
-  "figured out twice.",
-]
-
 [config.home.intro]
-title = "Pavel Kozhevnikov"
+title = ""
 name = "Pavel Kozhevnikov"
 body = [
-  "This is my personal site.",
-  "It collects what I write, what I build, and shorter notes that are not finished enough to be posts.",
-  "A longer introduction lives on the About page.",
+  "Backend engineer, mostly .NET.",
+  "Lately building AI pipelines and figuring out where they actually pay off.",
 ]
 
 [config.home.latest]
@@ -177,9 +169,9 @@ tooltip = "/rss.xml"
 copy = false
 
 [[config.home.doing]]
-text = "Setting up this site"
+text = "WordCapture"
 mark = "01"
 
 [[config.home.doing]]
-text = "Writing the first posts"
+text = "AI pipelines"
 mark = "02"
