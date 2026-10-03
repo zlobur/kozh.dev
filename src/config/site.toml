@@ -110,19 +110,12 @@ href = "/about"
 
 [config.home]
 
-[config.home.quote]
-text = [
-  "Write it down once,",
-  "so it does not have to be",
-  "figured out twice.",
-]
-
 [config.home.intro]
-title = "Pavel Kozhevnikov"
+title = ""
 name = "Pavel Kozhevnikov"
 body = [
   "Backend engineer, mostly .NET.",
-  "I write about systems I build and run, at work and at home.",
+  "Lately building AI pipelines and figuring out where they actually pay off.",
 ]
 
 [config.home.latest]
@@ -180,5 +173,5 @@ text = "WordCapture"
 mark = "01"
 
 [[config.home.doing]]
-text = "Writing articles"
+text = "AI pipelines"
 mark = "02"
